@@ -173,3 +173,37 @@
 
 	* `vi .gitconfig`
 
+
+### 实用技巧
+
+* 显示历史记录时，每个提交的信息只显示一行
+
+	`git config format.pretty oneline`
+	
+	相当于
+	
+	`git log --pretty=oneline`
+
+### 链接与资源
+
+* 学习教程
+
+	+ [优才网Git基础学习视频](http://www.ucai.cn/course/show/241)
+	
+	+ [优才网Git使用教程](http://www.ucai.cn/course/show/53)
+	
+	+ [廖雪峰Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+	
+	+ [Git-简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)
+	
+* 指南与手册
+
+	+ [Git社区参考书](http://git-scm.com/book/zh/v2)
+	
+	+ [GitbookIO](https://github.com/GitbookIO/git/blob/master/zh/SUMMARY.md)
+	
+	+ [像git那样思考](http://think-like-a-git.net/)
+	
+	+ [GitHub帮助](https://help.github.com/)
+	
+	+ [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
