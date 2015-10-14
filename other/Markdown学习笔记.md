@@ -8,17 +8,18 @@
 	成为一种"易读易写"的网络书写语言
 + **使用的优点**
 
-	. 专注文字内容而不是排版样式
+1. 专注文字内容而不是排版样式
 
-	. 格式(HTML/PDF/本身的.md文件)导出方便
+2. 格式(HTML/PDF/本身的.md文件)导出方便
 + **官方文档**
 
-	. [始人 John Gruber 的 Markdown 语法说明](http://daringfireball.net/projects/markdown/syntax)
+1. [始人 John Gruber 的 Markdown 语法说明](http://daringfireball.net/projects/markdown/syntax)
 	
-	. [Markdown 中文版语法说明](http://wowubuntu.com/markdown/)
+2. [Markdown 中文版语法说明](http://wowubuntu.com/markdown/)
 	
 ## 二、Markdown语法
-	###标题
+
+	### 标题
 	
 		在 Markdown 中，如果一段文字被定义为标题，只要在这段文字前加 # 号即可
 		`# 一级标题`
