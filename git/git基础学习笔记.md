@@ -1,8 +1,6 @@
-学习视频地址(优才网 Git视频教程): [git视频链接](http://www.ucai.cn/course/show/241)
+## git学习笔记
 
-## 笔记内容
-
-### 一、git的介绍与安装及add commit操作
+### 简介与安装
 
 1. **相关网址**
 
@@ -18,144 +16,150 @@
 	
 	`git --version`
 	
-	命令帮助文档查看  
+	获取帮助  
 	
-	`XX命令 --help`
+	`git help <verb>`
 	
-3. **初始化**
-
-	`git init`
+	`git <verb> --hlep`
 	
-4. **添加**
-
-	`git add `
-
-5. **提交**
+	`man git-<verb>`
 	
-	`git commit `
+### 创建新仓库
 
-
-### 二、git状态与对比status diff
-
-* `git status`
-
-* `git diff`
-
-
-### 三、git版本回退
-
-* `git log`
-
-* `git log --pretty=oneline`
+创建新文件夹，打开，然后执行下面命令
 	
-* HEAD 当前版本
+`git init`（初始化）
 	
-* HEAD^ 上一个版本
+以创建新的git仓库
+
+### 检出仓库(克隆版本)
+
+* 克隆本地仓库版本
+
+	`git clone /path/to/repository` 
 	
-* `git reset --hard HEAD^`回退到上一个版本
+* 克隆远程仓库版本
 	
-* `git reflog`
+	`git clone username@host:/path/to/repository`
 
-### 四、git工作区和版本库
+### 工作流
 
-* 工作区
+* 本地仓库由git维护的三棵"树"组成。第一个是你的 **工作目录** ，它持有实际文件；第二个是 **暂存区(Index)** , 它像个缓存区域，临时保存你的改动；最后是 **HEAD**，它指向你最后一次提交的结果。
 
-* 缓存区
+* working dir `add` ==> Index(Stage) `commit` ==> HEAD(master)
 
-* 版本库 : master(HEAD)
+### 添加和提交
+
+* 添加
+
+	`git add <filenme>`
 	
-* `git add <name> ` ==>缓存区
-
-* `git commit <name>` ===>从缓存区到master(HEAD)
-
-### 五、git管理修改
-
-* `git status`
-
-* `git diff HEAD -- <name>`
-
-### 六、git注册github和本地配置
-
-* 注册github账号
-
-* 本地配置
-
-	* ssh
+	`git add *`
 	
-	* ssh-keygen -t rsa -C "github邮件名"
+	提出更改只是把他们添加到缓存区，这是git基本工作流程的第一步
+
+* 提交
 	
-	* 在github设置添加ssh-key
-
-### 七、git添加远程库
-
-* 创建版本库:https/ssh
-
-* 远程到本地
-
-	* `git pull`
+	`git commit -m "代码提交信息"`
 	
-* 本地到远程
+	提交改动，就是把改动提交到了HEAD,但是还没推送到你的远程仓库
 
-	* `git push`
 
-### 八、git标签
+### 推送改动
+
+* 推动改动到远程仓库
+
+	`git push origin master` 
+	
+	master 可以换成你想要推送的任何分支
+	
+* 推送到所添加的服务器
+
+	`git remote add origin <server>`
+
+	如果还克隆现有仓库，并想将你的仓库连接到远程服务器，可以使用上面的命令
+
+### 分支
+
+* 分支是用来将特性开发绝缘开来的。创建仓库的时候，*master* 是“默认”的分支。在其他分支上进行开发，完成后台再将他们合并到主分支上。
+
+* 创建并切换分支
+
+	`git checkout -b feature_x`
+
+* 切换回主分支
+
+	`git chekcout master`
 
 * 查看分支
 
-	* `git branch`
+	`git branch`
 	
-* 添加标签
-		
-	* `git tag <tagName>`
-	
-* 查看标签
+* 删掉新建的分支
 
-	* `git tag`
-		
-	* `git tag -m "注释"`
+	`git branch -d feature_x`
 	
-	* `git show <tagName>`
-	
-* 补添加标签
-	* `git log --pretty=oneline --abbrev-commit`
-	
-	* `git tag <tagName>版本号`
-	
-* 删除标签
+* 推送分支到远程仓库，不然该分支就不为人所见
 
-	* `git tag -d <tagName>`
-
-### 九、git远程库克隆
-
-* `git clone`
-
-### 十、git创建与合并分支
-
-* 创建分支
-
-	* `git branch <branchName>`
+	`git push origin <branch>` 
 	
-	* `git checkout -b <branchName>`
-	
-* 切换分支
-	
-	* `git checkout <branchName>`
-	
+### 更新与合并
+
+* 更新本地仓库到最新改动
+
+	`git pull`
+
 * 合并分支
 
-	* `git merge`
+	`git mergen <branch>`
 	
-* 删除分支
-
-	* `git branch -d <branchName>`
-
-### 十一、git冲突解决
-
-* **冲突**:两个分支上修改同一行数据
+* 解决冲突
 	
-* **解决**:手动修改,然后git add ,git commit, git merge
+	若有冲突，需手动解决，然后再 `git add <filename>`
 
-### 十二、git别名
+* 版本差异预览
+
+	`git diff <source_branch> <target_branch>` 
+
+### 标签
+
+* 查看标签
+
+	`git tag`
+	
+	`git show <tagName>`
+
+* 添加标签
+
+	`git tag <tagName>`
+
+	`git tag <tagName> <版本ID前10位>`
+
+* 删除标签
+
+	`git tag -d <tagName>`
+
+* 查看版本日志
+
+	`git log`
+	
+	`git log --pretty=oneline`
+
+### 替换本地改动
+
+* 替换本地改动
+
+	`git checkout -- <filename>`
+	
+	此命令会使用HEAD中最新内容替换掉你的工作目录中的文件。已添加到缓存区的改动以及新文件都不会受到影响。
+
+* 获取服务器最新的版本历史，并将你本地主分支指向它
+
+	`git fetch origin`
+	
+	`git reset --hard origin/master`
+	
+### 别名
 
 * 创建
 
