@@ -8,14 +8,15 @@
 	成为一种"易读易写"的网络书写语言
 + **使用的优点**
 
-1. 专注文字内容而不是排版样式
+	1. 专注文字内容而不是排版样式
 
-2. 格式(HTML/PDF/本身的.md文件)导出方便
+	2. 格式(HTML/PDF/本身的.md文件)导出方便
+
 + **官方文档**
 
-1. [始人 John Gruber 的 Markdown 语法说明](http://daringfireball.net/projects/markdown/syntax)
+	1. [始人 John Gruber 的 Markdown 语法说明](http://daringfireball.net/projects/markdown/syntax)
 	
-2. [Markdown 中文版语法说明](http://wowubuntu.com/markdown/)
+	2. [Markdown 中文版语法说明](http://wowubuntu.com/markdown/)
 	
 ## 二、Markdown语法
 
