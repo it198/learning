@@ -81,7 +81,38 @@ Markdown 比较累人的地方，例子如下：
 
 分割线的语法只需要另起一行，连续输入三个星号`***`/`---`即可
 
-## Markdown资源推荐
+## 三、Markdown资源推荐
+
+### 编辑器
+
+Windows平台
+
+	. [MarkdownPad](http://markdownpad.com/)
+	. [MarkPad](http://code52.org/DownmarkerWPF/)
+
+Linux平台
+
+	. [ReText](https://github.com/retext-project/retext)
+
+Mac平台
+
+	. [Mou](http://25.io/mou/)
+
+在线编辑器
+
+	.[Markable.in](http://markable.in/)
+	.[Dillinger.io](http://dillinger.io/)
+
+开源编辑器
+	
+	. [Editor.md](https://pandao.github.io/editor.md/)
+	. [Mditor](https://github.com/Houfeng/mditor)
+	. [Stackedit](https://github.com/benweet/stackedit)
+	
+
+
+
+
 
 
 	
