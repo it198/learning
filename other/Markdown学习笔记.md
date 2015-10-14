@@ -88,6 +88,7 @@ Markdown 比较累人的地方，例子如下：
 Windows平台
 
 	. [MarkdownPad](http://markdownpad.com/)
+	
 	. [MarkPad](http://code52.org/DownmarkerWPF/)
 
 Linux平台
@@ -101,12 +102,15 @@ Mac平台
 在线编辑器
 
 	.[Markable.in](http://markable.in/)
+	
 	.[Dillinger.io](http://dillinger.io/)
 
 开源编辑器
 	
 	. [Editor.md](https://pandao.github.io/editor.md/)
+	
 	. [Mditor](https://github.com/Houfeng/mditor)
+	
 	. [Stackedit](https://github.com/benweet/stackedit)
 	
 
