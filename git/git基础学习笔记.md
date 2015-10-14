@@ -159,7 +159,7 @@
 
 * 创建
 
-	* `git config --global alias.st stauts`
+	* `git config --global alias.st "git status"`
 
 * 使用
 
