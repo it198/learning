@@ -107,11 +107,26 @@
 
 	开源编辑器
 
-		. [Editor.md](https://pandao.github.io/editor.md/)
+	. [Editor.md](https://pandao.github.io/editor.md/)
 
-		. [Mditor](https://github.com/Houfeng/mditor)
+	. [Mditor](https://github.com/Houfeng/mditor)
 
-		. [Stackedit](https://github.com/benweet/stackedit)
+	. [Stackedit](https://github.com/benweet/stackedit)
++ **插件**
+
+	Sublime
+	
+	. [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)
+	
+	. [MarkdownEditing](https://github.com/ttscoff/MarkdownEditing)
+	
+	. [Markdonw Previe](https://github.com/revolunet/sublimetext-markdown-preview)
+	
+		`shift + command + P     ==>mpv`
+	
+	印象笔记（Evernote）
+	
+	. [马克飞象](https://maxiang.io/)
 	
 
 
