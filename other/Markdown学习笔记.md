@@ -94,16 +94,15 @@ Windows平台
 Linux平台
 
 	. [ReText](https://github.com/retext-project/retext)
-
+	
 Mac平台
 
 	. [Mou](http://25.io/mou/)
 
 在线编辑器
-
-	.[Markable.in](http://markable.in/)
+	. [Markable.in](http://markable.in/)
 	
-	.[Dillinger.io](http://dillinger.io/)
+	. [Dillinger.io](http://dillinger.io/)
 
 开源编辑器
 	
