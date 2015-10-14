@@ -87,31 +87,31 @@
 
 	Windows平台
 	
-		. [MarkdownPad](http://markdownpad.com/)
-		
-		. [MarkPad](http://code52.org/DownmarkerWPF/)
-
-Linux平台
-
-. [ReText](https://github.com/retext-project/retext)
+	. [MarkdownPad](http://markdownpad.com/)
 	
-Mac平台
+	. [MarkPad](http://code52.org/DownmarkerWPF/)
 
-. [Mou](http://25.io/mou/)
+	Linux平台
 
-在线编辑器
+	. [ReText](https://github.com/retext-project/retext)
+	
+	Mac平台
 
-. [Markable.in](http://markable.in/)
+	. [Mou](http://25.io/mou/)
 
-. [Dillinger.io](http://dillinger.io/)
+	在线编辑器
 
-开源编辑器
+	. [Markable.in](http://markable.in/)
 
-. [Editor.md](https://pandao.github.io/editor.md/)
+	. [Dillinger.io](http://dillinger.io/)
 
-. [Mditor](https://github.com/Houfeng/mditor)
+	开源编辑器
 
-. [Stackedit](https://github.com/benweet/stackedit)
+	. [Editor.md](https://pandao.github.io/editor.md/)
+
+	. [Mditor](https://github.com/Houfeng/mditor)
+
+	. [Stackedit](https://github.com/benweet/stackedit)
 	
 
 
