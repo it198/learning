@@ -1,4 +1,4 @@
-## 《Pro Git》读书笔记
+## 《Pro Git》读书笔记 1
 
 ### 1.起步
 
@@ -98,6 +98,48 @@
 * 参见官网： [Git下载安装](http://git-scm.com/downloads)
 
 #### 1.6 初次运行 Git 前的配置
+
+* **配置工具** `git config`
+
+	+ Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量。 这些变量存储在三个不同的位置：
+	
+		- 1、 `/etc/gitconfig `文件: 包含系统上每一个用户及他们仓库的通用配置。 如果使用带有 `--system` 选项的 `git config` 时，它会从此文件读写配置变量。
+		
+		- 2、`~/.gitconfig` 或 `~/.config/git/config` 文件：只针对当前用户。 可以传递 `--global` 选项让 Git 读写此文件。
+		
+		- 3、当前使用仓库的 Git 目录中的 `config` 文件（就是 `.git/config`）：针对该仓库。
+		
+	+ 每一个级别覆盖上一级别的配置，所以` .git/config` 的配置变量会覆盖 `/etc/gitconfig` 中的配置变量。
+	
+* **配置用户信息**
+
+ 	+ 当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改：
+ 	
+ 		`git config --global user.name "Hansome"`
+ 	
+ 		`git config --global user.email "hansome@it198.com"`
+ 	
+* **配置编辑器**
+
+	`git config --global core.editor emacs/vim/...`
+
+* **检查配置信息**
+
+	`git config --list`
+	
+	`git config <key>`
+
+#### 1.7 获取帮助
+
+* `git help <verb>`
+	
+* `git <verb> --help`
+	
+* `man git-<verb>`
+	
+* `git`
+
+
 
 
 
