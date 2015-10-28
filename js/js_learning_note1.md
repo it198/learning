@@ -46,13 +46,15 @@
 	
 * 容易产生全局变量的例子
 
-		```javascript
-		function sum(x, y) {
-   			//不推荐写法：隐式全局变量
-   			result = x + y;
-   			return result;
-		
-		}
+	```javascript
 	
-		```
+	function sum(x, y) {
+	
+   		//不推荐写法：隐式全局变量
+   		result = x + y;
+   		return result;
+		
+	}
+	
+	```
 	
